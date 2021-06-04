@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:id="@+id/main">
+
+        <EditText
+            android:id="@+id/simple_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Diet"
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/diet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/diets"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Сalories range"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/mincalories"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="0"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/maxcalories"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="0"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+\
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Introduce the products you want to exclude"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/excluded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="none"
+            android:textSize="18sp"/>
+
+        <Button
+            android:onClick="search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/errorfound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:textSize="18sp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
