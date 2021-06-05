@@ -9,9 +9,9 @@ import androidx.room.RoomDatabase;
 
 @Database(entities={Category.class}, version=2)
 public abstract class CategoryDB extends RoomDatabase {
-    abstract ManagerCategory manager();
+    abstract ManagerCategory manager_category();
 
-    private static final String DB_NAME = "mycategory2.db";
+    private static final String DB_NAME = "category5.db";
     private static volatile com.example.dbs.CategoryDB INSTANCE = null;
 
     synchronized static com.example.dbs.CategoryDB get(Context ctxt) {

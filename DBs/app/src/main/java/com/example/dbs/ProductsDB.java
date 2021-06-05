@@ -11,7 +11,7 @@ import androidx.room.RoomDatabase;
 public abstract class ProductsDB extends RoomDatabase {
     abstract Manager manager();
 
-    private static final String DB_NAME = "myproducts2.db";
+    private static final String DB_NAME = "myproducts5.db";
     private static volatile com.example.dbs.ProductsDB INSTANCE = null;
 
     synchronized static com.example.dbs.ProductsDB get(Context ctxt) {

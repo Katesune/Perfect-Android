@@ -5,28 +5,36 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/main_lin">
     <Button
-        android:onClick="onAddTuneClick"
+        android:onClick="AddProduct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add tune" />
+        android:text="Add Product" />
 
     <Button
         android:onClick="onClearClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clear" />
+        android:text="Delete All" />
 
+    <Button
+        android:onClick="showAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show All" />
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/products_listview" />
+        android:layout_height="wrap_content"
+        android:id="@+id/category_listview"
+        android:layout_marginBottom="40sp"/>
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/category_listview" />
+        android:layout_height="wrap_content"
+        android:id="@+id/products_listview"
+        android:layout_marginBottom="30sp"/>
 
 </LinearLayout>

@@ -3,8 +3,10 @@ package com.example.dbs;
 import androidx.annotation.NonNull;
 import androidx.room.Delete;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.Insert;
 import androidx.room.PrimaryKey;
+import androidx.room.Relation;
 import androidx.room.Update;
 
 import java.util.Locale;
@@ -18,6 +20,8 @@ public class Category {
     @NonNull
     String name, region;
 
+
+
     public Category(int _id, @NonNull String name, @NonNull String region) {
         this._id = _id;
         this.name = name;
@@ -26,4 +30,6 @@ public class Category {
 
     @Override
     public String toString() { return String.format(Locale.getDefault(), "%s: %s (%d)", name, region); }
+
+
 }
