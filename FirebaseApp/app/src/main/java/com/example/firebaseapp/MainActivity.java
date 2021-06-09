@@ -74,8 +74,10 @@ public class MainActivity extends AppCompatActivity {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 Log.d("mytag", "firebaseAuthWithGoogle:" + account.getId());
+                Toast.makeText(MainActivity.this, "Авторизация прошла успешно", Toast.LENGTH_SHORT).show();
                 firebaseAuthWithGoogle(account.getIdToken());
             } catch (ApiException e) {
+                Toast.makeText(MainActivity.this, "Авторизация провалена", Toast.LENGTH_SHORT).show();
                 // Google Sign In failed, update UI appropriately
                 Log.d("mytag", "Google sign in failed", e);
             }
